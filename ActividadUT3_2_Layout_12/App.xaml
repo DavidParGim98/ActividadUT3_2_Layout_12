@@ -1,0 +1,107 @@
+﻿<Application x:Class="ActividadUT3_2_Layout_12.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ActividadUT3_2_Layout_12"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="DockPanel">
+            <Setter Property="LastChildFill" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="Titulo_TextBlock">
+            <Setter Property="DockPanel.Dock" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="DockPanel" x:Key="Pie_DockPanel">
+            <Setter Property="DockPanel.Dock" Value="Bottom"/>
+            <Setter Property="LastChildFill" Value="False"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="DockPanel.Dock" Value="Right"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="MinWidth" Value="100"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="PieIzq_TextBlock">
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+
+        <Style TargetType="Image">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Stretch" Value="Fill"/>
+        </Style>
+
+        <Style TargetType="StackPanel">
+            <Setter Property="Orientation" Value="Vertical"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+
+        <Style TargetType="Border" x:Key="LightCoral_Border">
+            <Setter Property="Background" Value="LightCoral"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect
+                        ShadowDepth="4"
+                        Direction="330"
+                        Color="Black"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlock_LightCoral">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TextBox_LightCoral">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="MinWidth" Value="420"/>
+        </Style>
+
+        <Style TargetType="Image" x:Key="Image_LightCoral">
+            <Setter Property="MaxHeight" Value="20"/>
+            <Setter Property="MaxWidth" Value="20"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <Style TargetType="Border" x:Key="LightYellow_Border">
+            <Setter Property="Background" Value="LightYellow"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect
+                        ShadowDepth="4"
+                        Direction="330"
+                        Color="Black"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="StackPanel" x:Key="LightYellow_StackPanel_Exterior">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Orientation" Value="Horizontal"/>
+        </Style>
+
+        <Style TargetType="StackPanel" x:Key="LightYellow_StackPanel_Interior" BasedOn="{StaticResource LightYellow_StackPanel_Exterior}">
+            <Setter Property="Orientation" Value="Vertical"/>
+        </Style>
+
+        <Style TargetType="GroupBox">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </Application.Resources>
+</Application>
